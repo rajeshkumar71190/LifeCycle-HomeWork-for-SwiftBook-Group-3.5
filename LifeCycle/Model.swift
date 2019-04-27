@@ -12,7 +12,7 @@ class Helper: NSObject {
     
     private var arrayOfMethods = [String]()
     static let shared = Helper()
-    let mainLabel = UILabel(frame: CGRect(x: 100, y: 100, width: 300, height: 300))
+    let mainLabel = UITextView(frame: CGRect(x: 100, y: 100, width: 300, height: 300))
     
     private override init() {
         super.init()
@@ -20,7 +20,7 @@ class Helper: NSObject {
     
     func printMessage(vc: UIViewController, line: Int = #line, function: String = #function) {
         print("\(vc.title ?? "nil"). Line: \(line) of function \(function)")
-        arrayOfMethods.append(function)
+        arrayOfMethods.append( vc.title ?? "nil" + "-" + function)
         let string = arrayOfMethods.joined(separator: "\n")
         
         guard let window = UIApplication.shared.keyWindow else { return }

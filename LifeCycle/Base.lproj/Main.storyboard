@@ -29,32 +29,14 @@
         <!--Yellow-->
         <scene sceneID="uAF-Rh-peP">
             <objects>
-                <viewController title="Yellow" id="U0S-6Y-qzi" customClass="ViewController" customModule="LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Yellow" id="U0S-6Y-qzi" customClass="ThirdViewController" customModule="LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XNy-Fc-a6s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ls2-0s-bzu">
-                                <rect key="frame" x="8" y="52" width="398" height="448"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ls2-0s-bzu" secondAttribute="trailing" constant="8" id="Fzs-4h-xCF"/>
-                            <constraint firstItem="Ls2-0s-bzu" firstAttribute="leading" secondItem="YAQ-Di-PSn" secondAttribute="leading" constant="8" id="XfA-A6-XS1"/>
-                            <constraint firstItem="Ls2-0s-bzu" firstAttribute="height" secondItem="XNy-Fc-a6s" secondAttribute="height" multiplier="1/2" id="euf-CV-2S7"/>
-                            <constraint firstItem="Ls2-0s-bzu" firstAttribute="top" secondItem="YAQ-Di-PSn" secondAttribute="top" constant="8" id="qQA-nn-b8e"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YAQ-Di-PSn"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Yellow" id="7A1-IZ-hVA"/>
-                    <connections>
-                        <outlet property="yellowLabel" destination="Ls2-0s-bzu" id="Vbh-WY-uyJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPP-Ad-FEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

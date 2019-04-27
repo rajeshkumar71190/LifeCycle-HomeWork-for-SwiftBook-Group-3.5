@@ -12,7 +12,7 @@ class Helper: NSObject {
     
     private var arrayOfMethods = [String]()
     static let shared = Helper()
-    let mainLabel = UILabel(frame: CGRect(x: 100, y: 100, width: 300, height: 300))
+    let mainTextView = UITextView(frame: CGRect(x: 100, y: 100, width: 300, height: 300))
     
     private override init() {
         super.init()
@@ -25,11 +25,12 @@ class Helper: NSObject {
         
         guard let window = UIApplication.shared.keyWindow else { return }
         
-        if !window.subviews.contains(mainLabel) {
-            window.addSubview(mainLabel)
-            window.bringSubviewToFront(mainLabel)
+        if !window.subviews.contains(mainTextView) {
+            window.addSubview(mainTextView)
+            window.bringSubviewToFront(mainTextView)
+            
         }
         
-        mainLabel.text = "\(vc.title ?? "nil") \(string)"
+        mainTextView.text = "\(vc.title ?? "nil") \(string)"
     }
 }

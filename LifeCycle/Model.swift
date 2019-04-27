@@ -20,7 +20,7 @@ class Helper: NSObject {
     
     func printMessage(vc: UIViewController, line: Int = #line, function: String = #function) {
         print("\(vc.title ?? "nil"). Line: \(line) of function \(function)")
-        arrayOfMethods.append(function)
+        arrayOfMethods.append((vc.title ?? "nil") + "-" + function)
         let string = arrayOfMethods.joined(separator: "\n")
         
         guard let window = UIApplication.shared.keyWindow else { return }
@@ -31,6 +31,6 @@ class Helper: NSObject {
             
         }
         
-        mainTextView.text = "\(vc.title ?? "nil") \(string)"
+        mainTextView.text = string
     }
 }

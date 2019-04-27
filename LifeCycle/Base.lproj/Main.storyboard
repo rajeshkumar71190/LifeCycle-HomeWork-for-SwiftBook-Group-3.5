@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cnz-we-JWG">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,49 +10,103 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Green-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Green" id="BYZ-38-t0r" customClass="ViewController" customModule="LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjl-xU-P9W">
+                                <rect key="frame" x="8" y="52" width="398" height="448"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49019607843137253" green="0.98039215686274506" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rjl-xU-P9W" secondAttribute="trailing" constant="8" id="Fkt-9j-szZ"/>
+                            <constraint firstItem="Rjl-xU-P9W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Rxw-zd-H0Q"/>
+                            <constraint firstItem="Rjl-xU-P9W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="f2a-5j-4ch"/>
+                            <constraint firstItem="Rjl-xU-P9W" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/2" id="msS-NB-2f3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="s2R-U5-p1v"/>
+                    <tabBarItem key="tabBarItem" title="Green" id="s2R-U5-p1v"/>
+                    <connections>
+                        <outlet property="greenLabel" destination="Rjl-xU-P9W" id="aqp-LY-uzx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-629" y="-28"/>
+            <point key="canvasLocation" x="-630.43478260869574" y="-28.125"/>
         </scene>
-        <!--Item 2-->
+        <!--Yellow-->
         <scene sceneID="uAF-Rh-peP">
             <objects>
-                <viewController id="U0S-6Y-qzi" customClass="ViewController" customModule="LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Yellow" id="U0S-6Y-qzi" customClass="ViewController" customModule="LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XNy-Fc-a6s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ls2-0s-bzu">
+                                <rect key="frame" x="8" y="52" width="398" height="448"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ls2-0s-bzu" secondAttribute="trailing" constant="8" id="Fzs-4h-xCF"/>
+                            <constraint firstItem="Ls2-0s-bzu" firstAttribute="leading" secondItem="YAQ-Di-PSn" secondAttribute="leading" constant="8" id="XfA-A6-XS1"/>
+                            <constraint firstItem="Ls2-0s-bzu" firstAttribute="height" secondItem="XNy-Fc-a6s" secondAttribute="height" multiplier="1/2" id="euf-CV-2S7"/>
+                            <constraint firstItem="Ls2-0s-bzu" firstAttribute="top" secondItem="YAQ-Di-PSn" secondAttribute="top" constant="8" id="qQA-nn-b8e"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YAQ-Di-PSn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="7A1-IZ-hVA"/>
+                    <tabBarItem key="tabBarItem" title="Yellow" id="7A1-IZ-hVA"/>
+                    <connections>
+                        <outlet property="yellowLabel" destination="Ls2-0s-bzu" id="Vbh-WY-uyJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPP-Ad-FEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955" y="-28"/>
         </scene>
-        <!--Item 1-->
+        <!--Blue-->
         <scene sceneID="79z-yZ-349">
             <objects>
-                <viewController id="eCQ-AI-LId" customClass="ViewController" customModule="LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Blue" id="eCQ-AI-LId" customClass="ViewController" customModule="LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VGF-cF-o9f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shc-hZ-oUW">
+                                <rect key="frame" x="8" y="52" width="398" height="448"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Shc-hZ-oUW" firstAttribute="height" secondItem="VGF-cF-o9f" secondAttribute="height" multiplier="1/2" id="G8c-eM-7qa"/>
+                            <constraint firstItem="Shc-hZ-oUW" firstAttribute="top" secondItem="DTb-jA-hFD" secondAttribute="top" constant="8" id="W9G-YN-Y7Q"/>
+                            <constraint firstItem="Shc-hZ-oUW" firstAttribute="leading" secondItem="DTb-jA-hFD" secondAttribute="leading" constant="8" id="ayh-Jp-qqM"/>
+                            <constraint firstAttribute="trailing" secondItem="Shc-hZ-oUW" secondAttribute="trailing" constant="8" id="irL-t0-bmm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DTb-jA-hFD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="IOI-6E-sxD"/>
+                    <tabBarItem key="tabBarItem" title="Blue" id="IOI-6E-sxD"/>
+                    <connections>
+                        <outlet property="blueLabel" destination="Shc-hZ-oUW" id="sWO-L0-d7z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xT1-sP-LtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,9 +122,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Plj-Vt-GMh"/>
                         <segue destination="eCQ-AI-LId" kind="relationship" relationship="viewControllers" id="20p-iD-l45"/>
                         <segue destination="U0S-6Y-qzi" kind="relationship" relationship="viewControllers" id="WLR-oW-SuW"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Plj-Vt-GMh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXK-2v-k9t" userLabel="First Responder" sceneMemberID="firstResponder"/>

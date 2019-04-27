@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  LifeCycle
 //
 //  Created by Michael Tseitlin on 4/27/19.
@@ -8,12 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-//    @IBOutlet var greenLabel: UILabel!
-////    @IBOutlet var blueLabel: UILabel!
-//    @IBOutlet var yellowLabel: UILabel!
-//
+class SecondViewController: UIViewController {
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         Helper.shared.printMessage(vc: self)
@@ -38,5 +34,5 @@ class ViewController: UIViewController {
         super.viewWillDisappear(animated)
         Helper.shared.printMessage(vc: self)
     }
-}
 
+}
